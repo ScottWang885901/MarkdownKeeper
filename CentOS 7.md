@@ -114,7 +114,7 @@ su -                  #切换超级用户
 
 - 再次telnet 8080 端口，成功！访问，成功！
 
-  ![1563961208678](D:\Typora_Workspace\CentOS 7.assets\1563961208678.png)
+  ![1563961208678](CentOS 7.assets\1563961208678.png)
 
 
 
