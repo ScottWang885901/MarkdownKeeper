@@ -61,7 +61,7 @@
 
   本地有一个springboot的helloworld 项目，先用maven打包，打开eclipse的terminal,在该项目下输入maven 打包命令  mvn package
 
-  ![1563950279907](C:\Users\swang25\AppData\Roaming\Typora\typora-user-images\1563950279907.png)
+  ![1563961038313](D:\Typora_Workspace\CentOS 7.assets\1563961038313.png)
 
 ​       打包成功后，拿到jar包用sftp 工具将其上传到linux 服务器
 
@@ -76,15 +76,15 @@
 
 - 启动后查看端口号和controller 的映射
 
-  ![1563951179035](C:\Users\swang25\AppData\Roaming\Typora\typora-user-images\1563951179035.png)
+  ![1563961069248](D:\Typora_Workspace\CentOS 7.assets\1563961069248.png)
 
 - 通过ip地址+端口号访问，但是访问不到，但是服务器是可以ping 到的。
 
-  ![1563951646125](C:\Users\swang25\AppData\Roaming\Typora\typora-user-images\1563951646125.png)
+  ![1563961131810](D:\Typora_Workspace\CentOS 7.assets\1563961131810.png)
 
 - 下面解决这个问题：
 
-  ![1563951742607](C:\Users\swang25\AppData\Roaming\Typora\typora-user-images\1563951742607.png)
+  ![1563961156624](D:\Typora_Workspace\CentOS 7.assets\1563961156624.png)
 
 ​       使用telnet 连接8080端口时显示失败，考虑是不是服务器防火墙的原因
 
@@ -92,9 +92,7 @@
 firewall-cmd --state    #查看防火墙的状态
 ~~~
 
-
-
-![1563951864273](C:\Users\swang25\AppData\Roaming\Typora\typora-user-images\1563951864273.png)
+![1563961177748](D:\Typora_Workspace\CentOS 7.assets\1563961177748.png)
 
 提示要用超级用户
 
@@ -104,7 +102,7 @@ su -                  #切换超级用户
 
 再次使用查看防火墙状态的命令
 
-![1563952038031](C:\Users\swang25\AppData\Roaming\Typora\typora-user-images\1563952038031.png)
+![1563961193008](D:\Typora_Workspace\CentOS 7.assets\1563961193008.png)
 
 可以看到防火墙running
 
@@ -116,9 +114,8 @@ su -                  #切换超级用户
 
 - 再次telnet 8080 端口，成功！访问，成功！
 
-  
+  ![1563961208678](D:\Typora_Workspace\CentOS 7.assets\1563961208678.png)
 
-  ![1563952352239](C:\Users\swang25\AppData\Roaming\Typora\typora-user-images\1563952352239.png)
 
 
 
@@ -224,8 +221,6 @@ su -                  #切换超级用户
    - 宿主机ping centos
 
 ![1563889640442](C:\Users\swang25\AppData\Roaming\Typora\typora-user-images\1563889640442.png)
-
-
 
 
 
